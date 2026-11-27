@@ -2,6 +2,7 @@
 
 Two separate local website prototypes for a custom AI wedding film service. Their enquiry forms are visual demos and do not send or store data.
 
+- `index.html` — selection page for browsing both sites from the repository root
 - `dist/` — English site, Vowframe
 - `zh-site/` — Chinese site, “婚礼电影计划” (working title), with its own design and copy
 
@@ -13,7 +14,7 @@ From this directory, run the English site:
 python3 -m http.server 8768 --bind 127.0.0.1 --directory dist
 ```
 
-Then open http://127.0.0.1:8768/ . This repository does not enable GitHub Pages or publish the website.
+Then open http://127.0.0.1:8768/ .
 
 To preview the Chinese site separately, run:
 
@@ -22,6 +23,10 @@ python3 -m http.server 8769 --bind 127.0.0.1 --directory zh-site
 ```
 
 Then open http://127.0.0.1:8769/ .
+
+## GitHub Pages
+
+To browse both sites online, configure GitHub Pages to deploy from branch `main` and folder `/(root)`. The root page links to the English site at `/dist/` and the Chinese site at `/zh-site/`. This does not activate the demo enquiry forms.
 
 ## Project files
 
